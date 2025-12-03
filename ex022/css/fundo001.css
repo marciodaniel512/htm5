@@ -1,0 +1,21 @@
+@charset "UTF-8";
+div{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    display: inline-block;
+}
+
+div#q1{
+    background-color: skyblue;
+}
+
+div#q2{
+    background-image: linear-gradient(to right, white, yellow, green, blue);
+}
+
+div#q3{
+    background-image: url('../imagens/pattern001.png');
+}

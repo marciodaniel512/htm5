@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamincas</h1>
+    <p>Tente abrir esse site em vários dispositios diferentes ou simplesmente aumente e e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:760px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width:1230px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzir aúdio</h1>
+    <p>Vamos reproduzir aúdio em HTML5</p>
+    <p>El Secreto - Yung Logos</p>
+    <audio src="audio/El Secreto - Yung Logos.mp3" controls="controls"></audio><br>
+    
+    <p>Metro - Ynug Logos</p>
+    <audio src="audio/Metro - Yung Logos.mp3" controls="controls"></audio>
+</body>
+</html>
