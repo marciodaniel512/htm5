@@ -7,14 +7,44 @@ body{
 table{
     width: 500px;
     border-collapse: collapse;
+    position: relative;
 }
 
-thead, tfoot{
-    background-color: gray;
-    color: white;
+th{
+    background-color: #383838;
+    color: wheat;
 }
 
 td, th{
     border: 1px solid black;
     padding: 10px;
+}
+
+caption{
+    background-color: lightgray;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+thead, tfoot{
+    background-color: #383838;
+    color: white;
+}
+thead > tr > th{
+    position: sticky;
+    top: 0px;
+    background-color: #383838;
+}
+
+th#estado{
+    width: 350px;
+}
+
+tbody > tr:nth-child(even){
+ background-color: lightgray;
+}
+
+.numero{
+    text-align: right;
 }
