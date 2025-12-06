@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+
+table{
+    width: 30vw;
+    height: 30vh;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+caption, th{
+    border: 1px solid black;
+    color: white;
+    font-weight: bolder;
+    background-color: #acaaaa;
+    padding: 10px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.425);
+}
+
+td{
+    padding: 5px;
+    border: 1px solid black;
+    width: 200px;
+}

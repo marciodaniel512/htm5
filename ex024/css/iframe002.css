@@ -1,0 +1,6 @@
+@charset "UTF-8";
+iframe{
+    display: block;
+    margin: auto;
+    width: 500px;
+}
