@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="php/cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Províncias de Angola</legend>
+            <p>
+                <label for="iprovincia">Estado</label>
+                <select name="provincia" id="iprovincia">
+                    <optgroup label="B">
+                        <option value="bengo">Bengo</option>
+                        <option value="benguela">Benguela</option>
+                        <option value="bie">Bié</option>
+                    </optgroup>
+
+                    <optgroup label="C">
+                        <option value="cabinda">Cabinda</option>
+                        <option value="cuando">Cuando</option>
+                        <option value="cubango">Cubango</option>
+                        <option value="cuanza-norte">Cuanza-Norte</option>
+                        <option value="cuanza-sul">Cuanza-Sul</option>
+                        <option value="cunene">Cunene</option>
+                    </optgroup>
+
+                    <optgroup label="H">
+                        <option value="huambo">Humabo</option>
+                        <option value="huila">Huíla</option>
+                    </optgroup>
+
+                    <optgroup label="I">
+                        <option value="icolo-e-bengo">Icolo e Bengo</option>    
+                    </optgroup>
+
+                    <optgroup label="L">
+                        <option value="luanda">Luanda</option>
+                        <option value="lunda-norte">Lunda Norte</option>
+                        <option value="lunda-sul">Lunda Sul</option>
+                    </optgroup>
+
+                    <optgroup label="M">
+                        <option value="malanja">Malanje</option>
+                        <option value="moxico">Moxico</option>
+                        <option value="moxico-leste">Moxico Leste</option>
+                    </optgroup>
+
+                    <optgroup label="N">
+                        <option value="namibe">Namibe</option>
+                    </optgroup>
+
+                    <optgroup label="U">
+                        <option value="uige">Uíge</option>
+                    </optgroup>
+
+                    <optgroup label="Z">
+                        <option value="zaire">Zaire</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="iprofissao">Profissão</label>
+                <input type="text" name="profissao" list="ilista-profissao">
+                <datalist id="ilista-profissao">
+                    <option value="adm">Administrador</option>
+                    <option value="cont">Contabilista</option>
+                    <option value="dev">Desnevolvedor</option>
+                    <option value="prof">Professor</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="imensagem">Mensagem:</label><br>
+                <textarea name="mensagem" id="imensagem" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="submit">
+                <input type="reset">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
