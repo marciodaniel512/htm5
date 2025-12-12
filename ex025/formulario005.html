@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromulário</title>
+</head>
+<body>
+    <form action="php/cadastro.php" method="get">
+        <fieldset></fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexo-masculino" value="M"><label for="isexo-masculino">Masculino</label>
+            <input type="radio" name="sexo" id="isexo-feminino" value="F"><label for="isexo-feminino">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <label for="iesporte-jjt"><input type="checkbox" name="esporte-jjt" id="iesporte-jjt">Ju-Jitsu Tradicional <br></label>
+            
+            <input type="checkbox" name="esporte-judo" id="iesporte-judo"><label for="iesporte-judo">Judo</label> <br>
+
+            <input type="checkbox" name="esporte-kickboxing" id="iesporte-kickboxing"><label for="iesporte-kickboxing">Kickboxing</label> <br>
+
+            <input type="checkbox" name="esporte-capoeira" id="iesporte-capoeira"><label for="iesporte-capoeira">Capoeira</label> <br>
+
+            <input type="checkbox" name="esporte-bjj" id="iesporte-bjj"><label for="iesporte-bjj">Brazillian Jiu-Jitsu</label> <br>
+            
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
