@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul type="none">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Picture</a></li>
                 <li><a href="#">Video</a></li>
                 <li><a href="#">Music </a></li>
                 <li><a href="#">Help</a></li>
-                
             </ul>
         </menu>
     </header>
@@ -30,5 +31,15 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id voluptatum perspiciatis? Officiis nihil vel omnis dignissimos a, possimus harum quas exercitationem laborum! Eveniet, beatae repudiandae perspiciatis quos cupiditate rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia numquam ullam, sapiente impedit a asperiores ea eius voluptas quos, debitis quo, soluta suscipit aliquam nesciunt autem ducimus laboriosam iste fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure et architecto dignissimos quasi exercitationem deleniti voluptates, maiores aspernatur quisquam explicabo sunt totam, laudantium aut. Quibusdam, molestiae. Accusamus odit voluptate veritatis?</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }   else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
