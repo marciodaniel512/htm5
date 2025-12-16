@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*Todas as demais medias*/
+
+/*
+    search for Typical Device Breakpoints
+    Pequenas Telas
+    Celular 600px
+    Tableb 768px
+    Desktop 1200px
+    TV upper 1200px
+    */
+
+/*Impressora*/
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url('../imagens/back-print.jpg'); /*Desnecessária porque as impressoras não imprimem o background dos sites*/
+    }
+
+    img#phone{ 
+        display: none; 
+    }
+    
+    img#print{ 
+        display: block; 
+    }
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        text-decoration: overline;
+        content: 'Essa impressão foi feita através do site: https://github.com/marciodaniel512/';
+    }
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    img#phone{ 
+        display: none; 
+    }
+    
+    img#tablet{ 
+        display: block; 
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    img#phone{ 
+        display: none; 
+    }
+
+    img#pc{ 
+        display: block; 
+    }
+}
+
+/*TV*/
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    img#phone{ 
+        display: none; 
+    }
+
+    img#tv{ 
+        display: block; 
+    }
+}
