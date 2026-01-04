@@ -1,18 +1,36 @@
 @charset "UTF-8";
+
+div#i1{
+   order: 0;
+}
+div#i2{
+   order: -2;
+}
+div#i3{
+   order: 4;
+}
+div#i4{
+   order: 8;
+}
+div#i5{
+   order: 2;
+}
+div#i6{
+   order: 0;
+}
+div#i7{
+   order: -4;
+}
+
 div.container{
    background-color: lightsalmon;
    display: flex;
-   /*
-   flex-direction: row;
-   flex-wrap: wrap;*/
    flex-flow: row wrap;
-   align-content: space-between;
-   height: 400px;
 }
 
 div.item{
    background-color: lightblue;
    border: 1px solid black;
    text-align: center;
-   padding: 40px;
+   padding: 20px;
 }
